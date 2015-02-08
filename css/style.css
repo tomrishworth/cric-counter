@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box; }
+
+html, body, .container {
+  height: 100%; }
+
+body {
+  background: #000;
+  color: #fff; }
+
+.container {
+  max-width: 500px;
+  margin: 0 auto; }
+
+.top {
+  height: 50%;
+  background: #222;
+  overflow-y: scroll; }
+
+.bottom {
+  height: 50%; }
+
+.overs {
+  background: black;
+  text-align: center; }
+
+.over {
+  min-height: 100px;
+  background: #222; }
+
+.ball-wrapper {
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+  height: 50px;
+  padding: 20px; }
+
+.ball-count {
+  opacity: 0.5;
+  font-size: 0.8rem; }
+  .ball-count:before {
+    content: "Ball #"; }
+
+.no-ball .ball-count, .wide .ball-count {
+  display: none; }
+
+.buttons {
+  height: 80%; }
+  .buttons div {
+    float: left;
+    width: 33.33333%;
+    height: 25%;
+    text-align: center;
+    background: #333;
+    padding: 20px; }
+
+.actions {
+  clear: left;
+  height: 20%; }
+  .actions div {
+    text-align: center;
+    width: 33.3333%;
+    float: left;
+    padding: 20px;
+    font-size: 12px; }
+  .actions .end {
+    background: #111; }
+  .actions .innings {
+    background: #111; }
+  .actions .undo {
+    background: #111; }
