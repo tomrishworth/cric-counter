@@ -1418,6 +1418,9 @@
 
 $(document).ready(function(){
 
+  // Fastclick
+  FastClick.attach(document.body);
+
   // Global variables
   var ballNumber = 0;
   var overs = 0;
