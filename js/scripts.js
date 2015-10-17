@@ -1471,6 +1471,12 @@ $(document).ready(function(){
   // Undo
   function undo(){
     $('.over .ball-wrapper:last-child').remove();
+    var rebowl = $('.over .ball-wrapper:last-child').attr("data-rebowl");
+    console.log(ballNumber);
+    console.log(rebowl);
+    if (rebowl !== "yes"){
+      --ballNumber;
+    }
   }
 
   $('.undo').click(undo);

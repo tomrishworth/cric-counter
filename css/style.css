@@ -1,71 +1,107 @@
+/* line 7, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 * {
   box-sizing: border-box; }
 
+/* line 11, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 html, body, .container {
   height: 100%; }
 
+/* line 15, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 body {
   background: #000;
   color: #fff; }
 
+/* line 20, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 .container {
   max-width: 500px;
   margin: 0 auto; }
 
+/* line 25, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 .top {
   height: 50%;
   background: #222;
   overflow-y: scroll; }
 
+/* line 31, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 .bottom {
   height: 50%; }
 
+/* line 35, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 .overs {
   background: black;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  padding: 5px; }
 
+/* line 44, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 .over {
   min-height: 100px;
-  background: #222; }
+  background: #222;
+  padding-left: 20px;
+  padding-top: 10px; }
 
+/* line 51, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 .ball-wrapper {
-  float: left;
-  width: 33.33333%;
   text-align: center;
-  height: 50px;
-  padding: 20px; }
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px; }
+  /* line 56, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+  .ball-wrapper .inner {
+    border-radius: 50%;
+    background: #2BCC71;
+    height: 72px;
+    width: 72px;
+    padding: 15px 10px; }
 
+/* line 65, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+.ball-result {
+  padding-bottom: 5px; }
+
+/* line 69, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 .ball-count {
-  opacity: 0.5;
-  font-size: 0.8rem; }
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700; }
+  /* line 70, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
   .ball-count:before {
     content: "Ball #"; }
 
-.no-ball .ball-count, .wide .ball-count {
+/* line 79, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+.no-ball .ball-count,
+.wide .ball-count {
   display: none; }
 
+/* line 82, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+.no-ball .inner,
+.wide .inner {
+  background: #E74C3C; }
+
+/* line 87, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 .buttons {
   height: 80%; }
+  /* line 89, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
   .buttons div {
     float: left;
-    width: 33.33333%;
+    width: 33.3333333333%;
     height: 25%;
     text-align: center;
     background: #333;
-    padding: 20px; }
+    padding: 20px;
+    border: 1px solid #222; }
 
+/* line 100, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 .actions {
   clear: left;
   height: 20%; }
+  /* line 103, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
   .actions div {
     text-align: center;
     width: 33.3333%;
     float: left;
-    padding: 20px;
-    font-size: 12px; }
-  .actions .end {
-    background: #111; }
-  .actions .innings {
-    background: #111; }
-  .actions .undo {
-    background: #111; }
+    padding: 15px 20px;
+    font-size: 12px;
+    height: 100%;
+    background: #3498DB;
+    border: 1px solid #217dbb; }
