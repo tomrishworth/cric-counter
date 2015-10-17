@@ -39,49 +39,68 @@ body {
 .over {
   min-height: 100px;
   background: #222;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px; }
 
-/* line 51, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+/* line 52, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 .ball-wrapper {
   text-align: center;
   display: inline-block;
   vertical-align: top;
-  margin: 5px; }
-  /* line 56, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
-  .ball-wrapper .inner {
-    border-radius: 50%;
-    background: #2BCC71;
-    height: 72px;
-    width: 72px;
-    padding: 15px 10px; }
+  margin: 5px 5px 10px 5px; }
 
-/* line 65, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+/* line 59, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 .ball-result {
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  border-radius: 50%;
+  background: #2BCC71;
+  height: 65px;
+  width: 65px;
+  padding: 0 10px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 25px;
+  line-height: 65px;
+  margin-bottom: 5px; }
 
-/* line 69, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+/* line 72, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 .ball-count {
-  color: rgba(0, 0, 0, 0.5);
+  color: #fff;
   font-weight: 700; }
-  /* line 70, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+  /* line 73, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
   .ball-count:before {
-    content: "Ball #"; }
+    content: "Ball ";
+    font-weight: 300; }
 
-/* line 79, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+/* line 84, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 .no-ball .ball-count,
 .wide .ball-count {
   display: none; }
 
-/* line 82, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
-.no-ball .inner,
-.wide .inner {
+/* line 87, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+.no-ball .ball-result,
+.wide .ball-result {
   background: #E74C3C; }
 
-/* line 87, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+/* line 97, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+.no-ball .ball-result,
+.wide .ball-result,
+.leg-bye .ball-result,
+.bye .ball-result,
+.wicket .ball-result {
+  font-size: 18px;
+  line-height: 20px;
+  padding-top: 20px; }
+
+/* line 106, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+.no-ball .ball-result,
+.leg-bye .ball-result {
+  padding-top: 12px; }
+
+/* line 111, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 .buttons {
   height: 80%; }
-  /* line 89, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+  /* line 113, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
   .buttons div {
     float: left;
     width: 33.3333333333%;
@@ -91,11 +110,11 @@ body {
     padding: 20px;
     border: 1px solid #222; }
 
-/* line 100, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+/* line 124, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
 .actions {
   clear: left;
   height: 20%; }
-  /* line 103, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
+  /* line 127, /Users/Tom/Dropbox/Atmosphere Studios/Cricket Scoring App/HTML Prototype/CCv2/src/sass/style.scss */
   .actions div {
     text-align: center;
     width: 33.3333%;
